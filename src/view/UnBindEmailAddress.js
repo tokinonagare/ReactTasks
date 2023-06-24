@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { View } from "react-native";
 import { TouchableOpacity, Text, Alert, TextInput, Modal } from 'react-native';
-import styles, {textStyle} from "../style/UnBundEmailAddressStyle";
+import styles, {textStyle} from "../style/UnBindEmailAddressStyle";
 
-const UnBundEmailAdress =()=>{
+const UnBindEmailAdress =()=>{
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [newEmail, setNewEmail] = useState('');
   
@@ -37,4 +37,4 @@ const UnBundEmailAdress =()=>{
         </>
     )
 }
-export default UnBundEmailAdress;
+export default UnBindEmailAdress;

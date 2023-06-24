@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { TouchableOpacity, Text, Alert } from 'react-native';
-import styles from "../style/UnBundEmailButtonStyle";
+import styles from "../style/UnBindEmailButtonStyle";
 
-const UnBundButtonEmail = () => {
+const UnBindButtonEmail = () => {
   const [isButtonPressed, setIsButtonPressed] = useState(false);
 
   const handleButtonPress = () => {
@@ -22,4 +22,4 @@ const UnBundButtonEmail = () => {
   );
 };
 
-export default UnBundButtonEmail;
+export default UnBindButtonEmail;

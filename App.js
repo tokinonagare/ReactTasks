@@ -1,12 +1,12 @@
 import React from 'react';
 import { StatusBar, View, StyleSheet } from 'react-native';
-import UnBundButtonEmail from './src/view/UnBundEmailButton';
-import UnBundEmailAdress from './src/view/UnBundEmailAddress';
+import UnBindButtonEmail from './src/view/UnBindEmailButton';
+import UnBindEmailAdress from './src/view/UnBindEmailAddress';
 export default function App() {
   return (
     <View style={styles.container}>
-      <UnBundEmailAdress />
-      <UnBundButtonEmail />
+      <UnBindEmailAdress />
+      <UnBindButtonEmail />
       <StatusBar style="auto" />
     </View>
   );
