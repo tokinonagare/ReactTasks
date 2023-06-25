@@ -1,12 +1,19 @@
 import React from 'react';
-import { StatusBar, View, StyleSheet } from 'react-native';
+import { StatusBar, View, StyleSheet, Alert } from 'react-native';
 import UnBindButtonEmail from './src/view/UnBindEmailButton';
-import UnBindEmailAdress from './src/view/UnBindEmailAddress';
+import UnBindEmailAddress from './src/view/UnBindEmailAddress';
+
+const DEFAULT_EMAIl_ADDRESS = '139******@139.com'
+
 export default function App() {
+    const onPress = () => {
+        Alert.alert('Success', `Email is : ${DEFAULT_EMAIl_ADDRESS}`);
+    }
+
   return (
     <View style={styles.container}>
-      <UnBindEmailAdress />
-      <UnBindButtonEmail />
+      <UnBindEmailAddress emailAddress={DEFAULT_EMAIl_ADDRESS}/>
+      <UnBindButtonEmail onPress={onPress}/>
       <StatusBar style="auto" />
     </View>
   );
